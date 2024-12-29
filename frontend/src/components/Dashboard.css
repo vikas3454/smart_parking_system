@@ -44,18 +44,22 @@ body, html {
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-left: auto; /* Pushes the buttons to the right */
 }
 
 .navbar-btn {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
-  padding: 8px 15px;
-  font-size: 16px;
+  padding: 5px 10px; /* Reduced padding */
+  font-size: 14px; /* Smaller font size */
   border-radius: 5px;
   cursor: pointer;
   position: relative;
   transition: all 0.3s;
+  text-align: center; /* Centers the text inside the button */
+  min-width: 100px; /* Ensures even width for all buttons */
+  width: 100px; /* Set fixed width for consistent size */
 }
 
 .navbar-btn.active::after,
@@ -79,7 +83,7 @@ body, html {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: blueviolet;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -104,7 +108,7 @@ body, html {
 .dropdown-content button {
   width: 100%;
   padding: 10px;
-  background-color: transparent;
+  background-color: blueviolet;
   border: none;
   text-align: left;
   cursor: pointer;
@@ -217,8 +221,6 @@ body, html {
   position: relative;
   z-index: 1;
   background-size: cover; /* Ensures image covers the entire section */
-  /*background-position: center center; /* Keeps the image centered */
-  /*background-attachment: fixed; /* Keeps the background fixed while scrolling */
 }
 
 .profile-container::before {
@@ -274,8 +276,8 @@ body, html {
 }
 
 .profile-actions button {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: #007bff;
+  color: blue;
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
@@ -285,7 +287,7 @@ body, html {
 }
 
 .profile-actions button:hover {
-  background-color: var(--secondary-color);
+  background-color: #007bff;
   transform: scale(1.05);
 }
 
